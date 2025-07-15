@@ -10,7 +10,7 @@ app.use(express.json());
 // Middleware
 
 const verifyToken = (req, res, next) => {
-  // console.log('from middleware', req.headers.authorization)
+  // console.log('from middleware', req.headers.authorization
   if (!req.headers.authorization) {
     return res.status(401).send({ message: "Forbidden Access" });
   } else if (req.headers.authorization) {
