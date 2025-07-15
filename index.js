@@ -7,7 +7,7 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
-// Middlewares
+// Middleware
 
 const verifyToken = (req, res, next) => {
   // console.log('from middleware', req.headers.authorization)
